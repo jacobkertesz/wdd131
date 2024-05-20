@@ -56,11 +56,11 @@ function viewHandler(event)
     }    
 }
 
-resizeHandle();
-button.addEventListener('click', toggleMenu);
-window.addEventListener('resize', resizeHandle);
-
 for (let i = 0; i < gallery.length; i++)
 {
     gallery[i].addEventListener('click', viewHandler);
 }
+
+resizeHandle();
+button.addEventListener('click', toggleMenu);
+window.addEventListener('resize', resizeHandle);
