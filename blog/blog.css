@@ -41,13 +41,41 @@ a {
     grid-template-columns: 3fr 1fr;
 }
 
-.book-grid {
+.book-grid article {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-row-gap: 40px;
+}
+
+article {
+    margin-bottom: 40px;
 }
 
 .left-section {
     border-right: solid 2px #EFC69B;
+    text-align: right;
+    padding: 7px 14px;
+}
+
+.left-section > * {
+    margin-bottom: 0;
+}
+
+.left-section > *:not(:first-child) {
+    margin-top: 12px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.center-section {
+    padding: 0 14px;
+}
+
+.center-section img {
+    display: block;
+    margin: 0 auto;
 }
 
 .filters {
