@@ -1,0 +1,99 @@
+form {
+    display: grid;
+    grid-template-columns: 150px 400px 150px;
+    grid-template-rows: 60px 300px 60px 20px 60px;
+}
+
+.card {
+    background-color: lightgrey;
+}
+#front {
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+
+    padding: 5%;
+}
+#back {
+    grid-column: 2/4;
+    grid-row: 2/4;
+
+    display: grid;
+    grid-template-columns: 400px 150px;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    z-index: -1;
+
+    padding-top: 5%;
+}
+#front, #back, #button {
+    border-radius: 18px;
+}
+
+
+label {
+    font-size: 26px;
+}
+label, #image {
+    margin: auto 0;
+}
+
+#total {
+    grid-row: 1/2;
+}
+
+#image {
+    text-align: right;
+}
+
+#cnumb {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+#cnumb input, #chold input {
+    width: 90%;
+    height: 30px;
+}
+
+#chold {
+    grid-row: 3/4;
+}
+
+#exp {
+    grid-row: 3/4;
+}
+#exp input {
+    width: 30%;
+    height: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+}
+
+
+#bar {
+    background-color: rgb(63, 63, 63);
+    height: 50%;
+    grid-column: 2/3;
+}
+#cvc {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 0 auto;
+    padding-left: 10%;
+}
+#cvc input {
+    width: 70%;
+    height: 30px;
+}
+
+#button {
+    grid-column: 3/4;
+    grid-row: 5/6;
+
+}
