@@ -32,9 +32,9 @@ function totalFees()
     feeElements = [...feeElements];
     return feeElements.reduce(total);
 }
-function total(total, num)
+function total(input1, input2)
 {
-    return total += num;
+    return input1.valueAsNumber + input2.valueAsNumber;
 }
 
 add.addEventListener('click', addParticipant);

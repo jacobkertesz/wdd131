@@ -47,7 +47,7 @@ export function successTemplate(info)
 {
     const success = 
     `
-    Thank you ${info.name.value} for registering. You have registered ${info.count.value} participants and owe $${info.fee.value} in Fees.
+    Thank you ${info.name.value} for registering. You have registered ${info.count.value} participants and owe $${info.fee} in Fees.
     `
     return success;
 }
