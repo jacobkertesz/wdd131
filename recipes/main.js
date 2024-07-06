@@ -17,26 +17,27 @@ function randomRecipe()
 
 function recipeTemplate(recipe)
 {
+    const rTags = tagsTemplate(recipe.tags)
     return `<section class="recipe">
             <img src="${recipe.image}" alt="${recipe.name}">
             <div>
                 <div class="tags">
-                    ${tagsTemplate(recipe.tags)}
+                    ${rTags}
                 </div>
                 <h1 class="name">${recipe.name}</h1>
                 ${ratingTemplate(recipe.rating)}
                 <p class="description">${recipe.description}</p>
             </div>
-        </section>
+            </section>
     `
 }
 
 function tagsTemplate(tags)
 {
-    tags.forEach((tag) => {
-        return `<p>${tag}</p>`
-    });
-}
+    return tags.map((tag) => `<p>${tag}</p>`).join('');
+    
+};
+
 
 function ratingTemplate(rating)
 {
@@ -68,7 +69,7 @@ function renderRecipes(recipeList)
 {
     const element = document.getElementsByClassName("recipe");
 
-    const recipeHtml = recipeTemplate(recipeList);
+    const recipeHtml = recipeTemplate(recipeList[0]);
 
     element.innerHTML = recipeHtml;
 }
