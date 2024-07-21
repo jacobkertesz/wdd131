@@ -1,0 +1,179 @@
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.index-grid img {
+    grid-column: 1/2;
+}
+.index-grid div {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    text-align: center;
+    font-size: 24px;
+    background-color: #E79556;
+    margin-bottom: 70px;
+}
+.title {
+    background-color: #2C462B; 
+    margin: 35px 175px;
+    padding-top: 30px;
+    color: #E79556;
+    text-decoration: none;
+}
+.title:hover {
+    color: white;
+    background-color: #7BE0AD;
+}
+#logo-link {
+    grid-column: 2/3;
+}
+#logo-link img {
+    width: 55%;
+    padding-top: 5%;
+    margin-bottom: -15%;
+    border: solid 10px #E79556;
+}
+
+main {
+    background-color: #2C462B;
+    margin-top: -70px;
+    padding-top: 70px;
+}
+div {
+    background-color: #E79556;
+}
+p {
+    font-size: 30px;
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    color: #2C462B;
+}
+h1 {
+    font-size: 50px;
+    font-family: "Macondo";
+    color: #2C462B;
+}
+h2 {
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #2C462B;
+}
+h3 {
+    font-size: 28px;
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    color:#E79556;
+}
+#index-main h3 {
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+.index-grid img {
+    width: 80%;
+    margin: 0 auto;
+}
+.index-grid div {
+    margin: 8%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#vista {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 4% 0;
+}
+
+footer {
+    background-color: #E79556;
+    display: flex;
+    justify-content: space-around;
+}
+footer h2:nth-of-type(2):hover {
+    color: white;
+    background-color: #7BE0AD;
+}
+footer a {
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #2C462B;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+    background-color: #7BE0AD;
+}
+
+/* subpage */
+#page-name {
+    text-align: center;
+    font-size: 60px;
+}
+.tab-box {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+}
+
+.tab {
+    overflow: hidden;
+    border: 3px solid #2C462B;
+    background-color: #E79556;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: black;
+}
+  
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+.tab button.active {
+    background-color: #7BE0AD;
+}
+
+#tabcontent {
+    padding: 6px 12px;
+    background-color: #E79556;
+    border: 3px solid #2C462B;
+    border-top: none;
+}   
+.tab-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tab-grid img {
+    grid-column: 2/3;
+    margin: auto auto;
+}
+.nettle img {
+    width: 50%;
+}
+.pine img {
+    width: 100%;
+}
+.paint img {
+    width: 50%;
+}
+.bear img {
+    width: 100%;
+}
+.pika img {
+    width: 100%;
+}
+.heron img {
+    width: 60%;
+}
